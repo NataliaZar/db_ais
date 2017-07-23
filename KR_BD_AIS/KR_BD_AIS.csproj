@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D3F2A75-AEB7-4BEC-967F-A2BF2528E8B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KR_BD_AIS</RootNamespace>
+    <AssemblyName>KR_BD_AIS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Depo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo.Designer.cs">
+      <DependentUpon>Depo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms.cs" />
+    <Compile Include="GD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GD.Designer.cs">
+      <DependentUpon>GD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InTrain.Designer.cs">
+      <DependentUpon>InTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="locDisp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="locDisp.Designer.cs">
+      <DependentUpon>locDisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locomotive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locomotive.Designer.cs">
+      <DependentUpon>Locomotive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocType.Designer.cs">
+      <DependentUpon>LocType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machinist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machinist.Designer.cs">
+      <DependentUpon>Machinist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manervDisp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manervDisp.Designer.cs">
+      <DependentUpon>manervDisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mian menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mian menu.Designer.cs">
+      <DependentUpon>mian menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M_L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M_L.Designer.cs">
+      <DependentUpon>M_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nazn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nazn.Designer.cs">
+      <DependentUpon>Nazn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutTrain.Designer.cs">
+      <DependentUpon>OutTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\reportselect\RepLocStay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\reportselect\RepLocStay.Designer.cs">
+      <DependentUpon>RepLocStay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\reportselect\RepMacEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\reportselect\RepMacEnd.Designer.cs">
+      <DependentUpon>RepMacEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\reportselect\RepMacContinue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\reportselect\RepMacContinue.Designer.cs">
+      <DependentUpon>RepMacContinue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportLoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportLoc.Designer.cs">
+      <DependentUpon>ReportLoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportMac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportMac.Designer.cs">
+      <DependentUpon>ReportMac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportML.Designer.cs">
+      <DependentUpon>ReportML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportNazn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportNazn.Designer.cs">
+      <DependentUpon>ReportNazn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportDepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportDepo.Designer.cs">
+      <DependentUpon>ReportDepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportGD.Designer.cs">
+      <DependentUpon>ReportGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportInTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportInTrain.Designer.cs">
+      <DependentUpon>ReportInTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportLocType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportLocType.Designer.cs">
+      <DependentUpon>ReportLocType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportOutTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportOutTrain.Designer.cs">
+      <DependentUpon>ReportOutTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\reportselect\RepMacLoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\reportselect\RepMacLoc.Designer.cs">
+      <DependentUpon>RepMacLoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\reportselect\RepOutTrainNazn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\reportselect\RepOutTrainNazn.Designer.cs">
+      <DependentUpon>RepOutTrainNazn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\reportselect\RepVanGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\reportselect\RepVanGD.Designer.cs">
+      <DependentUpon>RepVanGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\reportselect\RepVanTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\reportselect\RepVanTrain.Designer.cs">
+      <DependentUpon>RepVanTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportVan.Designer.cs">
+      <DependentUpon>ReportVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Van.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Van.Designer.cs">
+      <DependentUpon>Van.cs</DependentUpon>
+    </Compile>
+    <Compile Include="АИС_жд_узлаSQLDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>АИС_жд_узлаSQLDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Depo.resx">
+      <DependentUpon>Depo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GD.resx">
+      <DependentUpon>GD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InTrain.resx">
+      <DependentUpon>InTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="locDisp.resx">
+      <DependentUpon>locDisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locomotive.resx">
+      <DependentUpon>Locomotive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocType.resx">
+      <DependentUpon>LocType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machinist.resx">
+      <DependentUpon>Machinist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manervDisp.resx">
+      <DependentUpon>manervDisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mian menu.resx">
+      <DependentUpon>mian menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M_L.resx">
+      <DependentUpon>M_L.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nazn.resx">
+      <DependentUpon>Nazn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutTrain.resx">
+      <DependentUpon>OutTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report\reportselect\RepLocStay.rdlc" />
+    <EmbeddedResource Include="Report\reportselect\RepLocStay.resx">
+      <DependentUpon>RepLocStay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\reportselect\RepMacEnd.rdlc" />
+    <EmbeddedResource Include="Report\reportselect\RepMacEnd.resx">
+      <DependentUpon>RepMacEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\reportselect\RepMacContinue.rdlc" />
+    <EmbeddedResource Include="Report\reportselect\RepMacContinue.resx">
+      <DependentUpon>RepMacContinue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportLoc.rdlc" />
+    <EmbeddedResource Include="ReportLoc.resx">
+      <DependentUpon>ReportLoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportMac.rdlc" />
+    <EmbeddedResource Include="Report\ReportMac.resx">
+      <DependentUpon>ReportMac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportML.rdlc" />
+    <EmbeddedResource Include="Report\ReportML.resx">
+      <DependentUpon>ReportML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportNazn.rdlc" />
+    <EmbeddedResource Include="Report\ReportNazn.resx">
+      <DependentUpon>ReportNazn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportDepo.rdlc" />
+    <EmbeddedResource Include="Report\ReportDepo.resx">
+      <DependentUpon>ReportDepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportGD.rdlc" />
+    <EmbeddedResource Include="Report\ReportGD.resx">
+      <DependentUpon>ReportGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report2.rdlc" />
+    <EmbeddedResource Include="Report\ReportInTrain.resx">
+      <DependentUpon>ReportInTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportLocType.rdlc" />
+    <EmbeddedResource Include="Report\ReportLocType.resx">
+      <DependentUpon>ReportLocType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportOutTrain.rdlc" />
+    <EmbeddedResource Include="Report\ReportOutTrain.resx">
+      <DependentUpon>ReportOutTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\reportselect\RepMacLoc.rdlc" />
+    <EmbeddedResource Include="Report\reportselect\RepMacLoc.resx">
+      <DependentUpon>RepMacLoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\reportselect\RepOutTrainNazn.rdlc" />
+    <EmbeddedResource Include="Report\reportselect\RepOutTrainNazn.resx">
+      <DependentUpon>RepOutTrainNazn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\reportselect\RepVanGD.rdlc" />
+    <EmbeddedResource Include="Report\reportselect\RepVanGD.resx">
+      <DependentUpon>RepVanGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\reportselect\RepVanTrain.rdlc" />
+    <EmbeddedResource Include="Report\reportselect\RepVanTrain.resx">
+      <DependentUpon>RepVanTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportVan.rdlc" />
+    <EmbeddedResource Include="Report\ReportVan.resx">
+      <DependentUpon>ReportVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Van.resx">
+      <DependentUpon>Van.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="АИС_жд_узлаSQLDataSet.xsc">
+      <DependentUpon>АИС_жд_узлаSQLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="АИС_жд_узлаSQLDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>АИС_жд_узлаSQLDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="АИС_жд_узлаSQLDataSet.xss">
+      <DependentUpon>АИС_жд_узлаSQLDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
