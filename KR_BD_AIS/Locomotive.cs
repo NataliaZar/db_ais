@@ -17,7 +17,7 @@ namespace KR_BD_AIS
         SqlDataReader dataReader;
         
         string connectionString = @"Data Source=LENOVO-B5080;Initial Catalog=АИС_жд_узлаSQL;Integrated Security=True";
-        //string connectionString = @"Data Source=LENOVO-B5080;AttachDbFilename=" + @"c:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\АИС_жд_узлаSQL.mdf" + ";Integrated Security=True;Connect Timeout=30;User Instance=True";
+      
         public Locomotive()
         {
             InitializeComponent();            
@@ -84,13 +84,8 @@ namespace KR_BD_AIS
             while (dataReader.Read())
             {
                 // Создаем переменные, получаем для них значения из объекта dataReader,
-                //используя метод GetТипДанных
                 string NazvLoc = dataReader.GetString(0);
                 bool LocUz = dataReader.GetBoolean(1);
-                //Выводим данные в элемент listBox1
-                //listBox1.Items.Add("Название локомотива: " + NazvLoc + " Нахождение локомотива на узле: " + LocUz);
-                //Создаем экземпляр item класса ListViewItem для записи в него
-                //данных из dataReader
                 ListViewItem item = new ListViewItem(new string[]{Convert.ToString(dataReader[0]), Convert.ToString(dataReader[1])});
                 listView1.Items.Add(item);
             }

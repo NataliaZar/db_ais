@@ -9,7 +9,6 @@ namespace KR_BD_AIS
 
    public static class Forms
    {
-        //public static Auth auth = new Auth();
       public static Menu menu = new Menu();
       public static MainMenu mMenu = new MainMenu();
       public static manevrDisp manevrdisp = new manevrDisp();

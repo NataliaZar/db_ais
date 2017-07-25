@@ -82,10 +82,6 @@ namespace KR_BD_AIS
                 string LocName = dataReader.GetString(0);
                 //Выводим данные в элемент listBox1
                 listBox1.Items.Add(LocName);
-                //Создаем экземпляр item класса ListViewItem для записи в него
-                //данных из dataReader
-                //ListViewItem item = new ListViewItem(new string[] { Convert.ToString(dataReader[0]), Convert.ToString(dataReader[1]) });
-                //listView1.Items.Add(item);
             }
             conn.Close();
         }

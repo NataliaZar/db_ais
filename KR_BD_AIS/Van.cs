@@ -67,15 +67,6 @@ namespace KR_BD_AIS
             SqlDataReader dataReader = myCommand.ExecuteReader();
             while (dataReader.Read())
             {
-                // Создаем переменные, получаем для них значения из объекта dataReader,
-                //используя метод GetТипДанных
-                //int Idvan = dataReader.GetInt32(0);
-                //string Nazn = dataReader.GetString(1);
-               // int Ves = dataReader.GetInt32(2);
-                //Выводим данные в элемент listBox1
-                //listBox1.Items.Add("Название локомотива: " + NazvLoc + " Нахождение локомотива на узле: " + LocUz);
-                //Создаем экземпляр item класса ListViewItem для записи в него
-                //данных из dataReader
                 ListViewItem item = new ListViewItem(new string[] { Convert.ToString(dataReader[0]), Convert.ToString(dataReader[1]), Convert.ToString(dataReader[2]) });
                 listView1.Items.Add(item);
             }
